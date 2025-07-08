@@ -1,34 +1,25 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-export default function Page() {
+const home = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.main}>
-        <Text style={styles.title}>Hellooo user how are you </Text>
-        <Text style={styles.subtitle}>This is the first page of your application, happy now.</Text>
-      </View>
+      <Text style={styles.text}>home</Text>
     </View>
-  );
+  )
 }
+
+export default home
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    padding: 24,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  main: {
-    flex: 1,
-    justifyContent: "center",
-    maxWidth: 960,
-    marginHorizontal: "auto",
-  },
-  title: {
-    fontSize: 64,
-    fontWeight: "bold",
-  },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
+  text: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'black',
   },
 });
