@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const home = () => {
+const LaundryApp = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>home</Text>
+      <Text style={styles.text}>Welcome to Laundry App</Text>
     </View>
   )
 }
 
-export default home
+  export default LaundryApp
 
 const styles = StyleSheet.create({
   container: {
@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: 'black',
+    fontStyle: 'italic',
+    color: 'green',
   },
 });
