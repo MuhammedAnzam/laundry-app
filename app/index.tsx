@@ -1,12 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import Footer from '../components/Footer';
-
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import NavigationBar from '../components/BottomNavigationbar';
 const LaundryApp = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Welcome to Laundry App</Text>
-      <Footer />
+      <NavigationBar />
     </View>
   )
 }
