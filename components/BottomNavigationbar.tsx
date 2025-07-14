@@ -13,16 +13,25 @@ export default function SimpleBottomNavigation() {
   return (
    <Box sx={{ width: 500 }}>
       <BottomNavigation
-        sx={{ backgroundColor: 'blue', position: 'fixed', bottom: 0, left: 0, right: 0 }}
+        sx={{ backgroundColor: '#f5fffa', 
+          position: 'fixed', 
+          bottom: 0, 
+          left: 0, 
+          right: 0,
+         }}
         showLabels
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
-      >
-        <BottomNavigationAction label="Home"icon={<HomeIcon />} />
-        <BottomNavigationAction label="Orders"icon={<ListAltIcon />}/>
-        <BottomNavigationAction label="Profile"icon={<PersonIcon />}/>
+
+  >
+        <BottomNavigationAction label="Home"icon={<HomeIcon />}
+         sx={{ color: value === 10 ? 'white' : 'blue' }}  />
+        <BottomNavigationAction label="Orders"icon={<ListAltIcon 
+         sx={{ color: value === 10 ? 'white' : 'blue' }}/>}/>
+        <BottomNavigationAction label="Profile"icon={<PersonIcon 
+         sx={{ color: value === 10 ? 'white' : 'blue', }}/>} />
       </BottomNavigation>
     </Box>
   )
